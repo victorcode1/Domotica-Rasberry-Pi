@@ -18,9 +18,7 @@ public class LedController {
     public String light() {
         if (pin == null) {
             GpioController gpio = GpioFactory.getInstance();
-            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_07, "MyLED", PinState.HIGH);
-
-        }else {
+            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_07, "MyLED", PinState.LOW);
 
         }
 
@@ -30,9 +28,13 @@ public class LedController {
     }
 
     @RequestMapping("/stop")
-    public String nolight() {
+    public String nolight() throws InterruptedException {
+        GpioController gpio = GpioFactory.getInstance();
 
+        pin.setShutdownOptions(true, PinState.LOW, PinPullResistance.OFF);
+        gpio.shutdown();
 
+        Thread.sleep(10000);
         return "OK";
     }
 
