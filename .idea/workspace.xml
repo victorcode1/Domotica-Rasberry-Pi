@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52140301-c5ca-4514-bc5a-d07e5a37ee2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zonkware/pi4led/controller/LedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zonkware/pi4led/controller/LedController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +17,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="SOFT" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1ajbpJUiByK0cJgqn0x7oamMMxi" />
   <component name="ProjectViewState">
